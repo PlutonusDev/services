@@ -1,0 +1,43 @@
+{
+  "name": "auth",
+  "version": "1.0.0",
+  "author": "PlutonusDev <joshua@plutonus.dev>",
+  "license": "GPL-3.0",
+  "private": true,
+  "scripts": {
+    "generate:database": "npx prisma generate",
+    "dev": "npx next dev -p 8003",
+    "start": "npm run build && npx next start -p 8003",
+    "build": "npx next lint && npx next build"
+  },
+  "dependencies": {
+    "@babel/core": "^7.16.7",
+    "@hookform/resolvers": "^2.8.8",
+    "@prisma/client": "^3.8.1",
+    "@tailwindcss/typography": "^0.5.0",
+    "bcrypt": "^5.0.1",
+    "iron-session": "^6.0.5",
+    "next": "^12.0.8",
+    "next-themes": "^0.0.15",
+    "node-fetch": "^3.2.0",
+    "prisma": "^3.8.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-hook-form": "^7.25.0",
+    "react-icons": "^4.3.1",
+    "react-is": "^17.0.2",
+    "react-spinners": "^0.11.0",
+    "styled-components": "^5.3.3",
+    "swr": "^1.1.2",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.38",
+    "autoprefixer": "^10.4.2",
+    "eslint": "^8.7.0",
+    "eslint-config-next": "12.0.8",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.15",
+    "typescript": "^4.5.4"
+  }
+}
